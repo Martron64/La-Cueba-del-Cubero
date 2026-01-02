@@ -8,9 +8,7 @@ let fila = tabla.insertRow();
 fila.insertCell().textContent ="3X3";
 fila.insertCell().textContent ="26";
 fila.insertCell().textContent ="3";
-fila.insertCell().textContent ="1";
 fila.insertCell().textContent ="6";
-fila.insertCell().textContent ="1";
 fila.insertCell().textContent ="1";
 fila.insertCell().textContent ="7";
 fila.insertCell().textContent ="6";
@@ -39,7 +37,7 @@ let tabla = document.getElementById("tablaCubos");
 for(let x=0;x<data.length;x++){  
   let fila = tabla.insertRow();
   fila.insertCell().textContent =data[x].cubo;
-  fila.insertCell().textContent =data[x].cantiPiezas;
+  fila.insertCell().textContent =data[x].cantPiezas;
   fila.insertCell().textContent =data[x].tipoPiezas;
   fila.insertCell().textContent =data[x].cantGiros;
   fila.insertCell().textContent =data[x].tipoGiros;
@@ -53,6 +51,7 @@ for(let x=0;x<data.length;x++){
   fila.insertCell().textContent =data[x].difAlgTot+data[x].difBlock+data[x].difDeform+data[x].difParid;
 }
 }
+
 
 
 
