@@ -41,7 +41,7 @@ for(let x=0;x<data.length;x++){
   fila.insertCell().textContent =data[x].tipoPiezas;
   fila.insertCell().textContent =data[x].cantGiros;
   fila.insertCell().textContent =data[x].tipoGiros;
-  fila.insertCell().textContent =data[x].PasosMin;
+  fila.insertCell().textContent =data[x].pasosMin;
   fila.insertCell().textContent =data[x].cantAlg;
   fila.insertCell().textContent =data[x].difPromAlg;
   fila.insertCell().textContent =data[x].difAlgTot;
@@ -51,6 +51,7 @@ for(let x=0;x<data.length;x++){
   fila.insertCell().textContent =data[x].difAlgTot+data[x].difBlock+data[x].difDeform+data[x].difParid;
 }
 }
+
 
 
 
