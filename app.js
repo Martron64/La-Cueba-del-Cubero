@@ -26,10 +26,10 @@ function actualizar(){
   fetch("DataCubos.json")
   .then(response => response.json())
   .then(data => {
-      // data YA ES UN ARRAY DE OBJETOS
-      console.log(data);
   });
-console.log("HOLA");
+  console.log("1");
+console.log(data);
+  console.log("2");
 let tabla = document.getElementById("tablaCubos");
 let fila = tabla.insertRow();
 fila.insertCell().textContent ="3X3";
@@ -48,6 +48,7 @@ fila.insertCell().textContent ="0";
 fila.insertCell().textContent ="0";
 fila.insertCell().textContent ="NO SE";
 }
+
 
 
 
