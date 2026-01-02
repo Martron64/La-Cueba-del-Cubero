@@ -27,10 +27,13 @@ function actualizar(){
   fetch("DataCubos.json")
   .then(response => response.json())
   .then(data => {
-    CUBOS=data;
+    cargarTabla(data);
   });
+  
+}
+function cargarTabla(data){
   console.log("1");
-console.log(CUBOS);
+  console.log(data);
   console.log("2");
 let tabla = document.getElementById("tablaCubos");
 let fila = tabla.insertRow();
