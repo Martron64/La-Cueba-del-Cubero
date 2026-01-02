@@ -1,1 +1,4 @@
-
+[
+  {"cubo":"3x3","cantPiezas":"26","tipoPiezas":3},
+  {"cubo":"4x4","cantPiezas":"56","tipoPiezas":3}
+]
