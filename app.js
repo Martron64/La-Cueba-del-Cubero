@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+  actualizar();
+});
+
 function calcular(){
 let tabla = document.getElementById("tablaCubos");
 let fila = tabla.insertRow(); 
@@ -19,8 +23,7 @@ fila.insertCell().textContent ="NO SE";
 }
 
 function actualizar(){
-  console.log("HOLA");
-  
+console.log("HOLA");
 let tabla = document.getElementById("tablaCubos");
 let fila = tabla.insertRow();
 fila.insertCell().textContent ="3X3";
@@ -40,7 +43,7 @@ fila.insertCell().textContent ="0";
 fila.insertCell().textContent ="NO SE";
 }
 
-  //actualizar();
+
 
 
 
