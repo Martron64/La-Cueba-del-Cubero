@@ -17,10 +17,7 @@ fila.insertCell().textContent ="0";
 fila.insertCell().textContent ="0";
 fila.insertCell().textContent ="NO SE";
 }
-document.addEventListener("DOMContentLoaded", () => {
-  
-  actualizar();
-});
+
 function actualizar(){
   console.log("HOLA");
   
@@ -43,7 +40,8 @@ fila.insertCell().textContent ="0";
 fila.insertCell().textContent ="NO SE";
 }
 
-  //actualizar();
+  actualizar();
+
 
 
 
