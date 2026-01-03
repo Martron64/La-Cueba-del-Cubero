@@ -11,7 +11,7 @@ function actualizar(){
   
 }
 function cargarTabla(data){
-  let text =document.getElementById("buscador").value.ToLowerCase();
+  let text =document.getElementById("buscador").value;
   console.log(text);
   console.log(data);
   let ch =document.getElementById("orden").value;
@@ -34,6 +34,7 @@ for(let x=0;x<data.length;x++){
   fila.insertCell().textContent =data[x].difAlgTot+data[x].difBlock+data[x].difDeform+data[x].difParid;
 }
 }
+
 
 
 
