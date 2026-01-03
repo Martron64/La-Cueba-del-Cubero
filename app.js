@@ -14,7 +14,8 @@ function cargarTabla(data){
   let text =document.getElementById("buscador").value.ToLowerCase();
   console.log(text);
   console.log(data);
-  console.log("2");
+  let ch =document.getElementById("orden").value;
+  console.log(ch);
 let tabla = document.getElementById("tablaCubos");
 for(let x=0;x<data.length;x++){  
   let fila = tabla.insertRow();
@@ -33,6 +34,7 @@ for(let x=0;x<data.length;x++){
   fila.insertCell().textContent =data[x].difAlgTot+data[x].difBlock+data[x].difDeform+data[x].difParid;
 }
 }
+
 
 
 
