@@ -66,28 +66,28 @@ function asignar(objeto,TIPO){
   if (TIPO=="DifTot"){
       aux=objeto.difAlgTot+((2.718281828**objeto.difBlock)-1)+((2.718281828**objeto.difDeform)-1)+objeto.difParid;
     }
-    else if(DifAlg=="DifAlg"){
+    else if(TIPO=="DifAlg"){
       aux=objeto.difAlgTot;
     }
-    else if(DifAlg=="DifBlock"){
+    else if(TIPO=="DifBlock"){
       aux=(2.718281828**objeto.difBlock)-1;
     }
-    else if(DifAlg=="DifDeform"){
+    else if(TIPO=="DifDeform"){
       aux=(2.718281828**objeto.difDeform)-1;
     }
-    else if(DifAlg=="DifParid"){
+    else if(TIPO=="DifParid"){
       aux=objeto.difParid;
     }
-    else if(DifAlg=="CantPiezas"){
+    else if(TIPO=="CantPiezas"){
       aux=objeto.cantPiezas;
     }
-    else if(DifAlg=="CantGriros"){
+    else if(TIPO=="CantGriros"){
       aux=objeto.cantGiros;
     }
-    else if(DifAlg=="CantAlg"){
+    else if(TIPO=="CantAlg"){
       aux=objeto.cantAlg;
     }
-    else if(DifAlg=="Nombre"){
+    else if(TIPO=="Nombre"){
       aux=objeto.cubo;
     }
   return aux;
@@ -98,6 +98,7 @@ function comparar(A,B,A_D){
   else if(A_D=="Des")
     return B<A
 }
+
 
 
 
