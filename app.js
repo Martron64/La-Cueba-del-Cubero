@@ -84,7 +84,7 @@ function asignar(objeto,TIPO){
     else if(DifAlg=="CantGriros"){
       aux=objeto.cantGiros;
     }
-    else if(DifAlg=="CantAlgo"){
+    else if(DifAlg=="CantAlg"){
       aux=objeto.cantAlg;
     }
     else if(DifAlg=="Nombre"){
@@ -98,6 +98,7 @@ function comparar(A,B,A_D){
   else if(A_D=="Des")
     return B<A
 }
+
 
 
 
