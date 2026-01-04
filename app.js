@@ -103,9 +103,11 @@ function comparar(A,B,A_D){
 function filtrar(data){
   let SubStr=document.getElementById("buscador").value;
   for(let x=0;x<data.length;x++){
+    console.log("-----------------------");
     console.log(data[x].cubo);
+    console.log(SubStr);
     console.log(subcadena(data[x].cubo,SubStr));
-  console.log("-----------------------");
+    console.log("-----------------------");
   }
 }
 function subcadena(Str,SubStr){
@@ -126,6 +128,7 @@ function subcadena(Str,SubStr){
   }
   return false;
 }
+
 
 
 
