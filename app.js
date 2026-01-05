@@ -132,7 +132,7 @@ function ImprimirTabla(data,algoritmos){
   let tabla = document.getElementById("tablaCubos");
   for(let x=0;x<data.length;x++){  
   if(data[x].direccion=="algoritmos/3x3.json"){
-    console.log(algoritmos[x].pasos.length);
+    console.log(algoritmos[x].length);
     console.log(dificultadAlgoritmicaPromedio(algoritmos[x]));
     console.log(dificultadAlgoritmicaTotal(algoritmos[x]));
   }
@@ -203,6 +203,7 @@ function dificultadAlgoritmicaTotal(algoritmos){
   }
   return (contador_original**2+contador_espejo/2);
 }
+
 
 
 
