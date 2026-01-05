@@ -189,23 +189,24 @@ function calculoDifAlgoritmica(algoritmo){
 
 function dificultadAlgoritmicaPromedio(algoritmos){
   let contador=0;
-  for(let x=0;x<algoritmos.lengt;x++){
+  for(let x=0;x<algoritmos.length;x++){
     contador=contador+calculoDifAlgoritmica(algoritmos[x]);
   }
-  return (contador/algoritmos.lengt);
+  return (contador/algoritmos.length);
 }
 
 function dificultadAlgoritmicaTotal(algoritmos){
   let contador_original=0;
   let contador_espejo=0;
   for(let x=0;x<algoritmos.length;x++){
-    if(algoritmo[x].tipo=="original")
+    if(algoritmos[x].tipo=="original")
       contador_original=contador_original+calculoDifAlgoritmica(algoritmos[x]);
     else
       contador_espejo=contador_espejo+calculoDifAlgoritmica(algoritmos[x]);
   }
   return (contador_original**2+contador_espejo/2);
 }
+
 
 
 
