@@ -27,19 +27,18 @@ let tabla = document.getElementById("tablaCubos");
   while(tabla.rows.length>1)
     tabla.deleteRow(1);
   filtrar(data);
-  ordenar(data);
   let algoritmos=[];
   cargarAlgoritmos(data,algoritmos);
 }
-function ordenar(data){
+function ordenar(data,algoritmos){
   let TIPO=document.getElementById("Tipo").value;
   let A_D =document.getElementById("Orden").value;
   for(let x=0;x<data.length-1;x++){
-    let aux1=asignar(data[x],TIPO);
+    let aux1=asignar(data[x],TIPO,algoritmos[y]);
     let min=aux1;
     let idmin=x;
     for(let y=x+1;y<data.length;y++){
-       let aux2=asignar(data[y],TIPO);
+       let aux2=asignar(data[y],TIPO,algoritmos[y]);
        if(comparar(aux2,min,A_D)){
          min=aux2;
          idmin=y;
@@ -49,25 +48,29 @@ function ordenar(data){
        let aux3=data[x];
        data[x]=data[idmin];
        data[idmin]=aux3;
+       let aux4=algoritmos[x];
+       algoritmos[x]=algoritmos[idmin]
+       algoritmos[idmin]=aux4
      }
   }
+  ImprimirTabla(data,algoritmos);
 }
-function asignar(objeto,TIPO){
+function asignar(objeto,TIPO,algoritmos){
   let aux;
   if (TIPO=="DifTot"){
-      aux=objeto.difAlgTot+((2.718281828**objeto.difBlock)-1)+((2.718281828**objeto.difDeform)-1)+objeto.difParid;
+      aux=(dificultadAlgoritmicaTotal(algoritmos)+((e**objeto.difBlock)-1)+((e**objeto.difDeform)-1)+objeto.difParid.alg/objeto.difParid.parid);
     }
     else if(TIPO=="DifAlg"){
-      aux=objeto.difAlgTot;
+      aux=dificultadAlgoritmicaTotal(algoritmos);
     }
     else if(TIPO=="DifBlock"){
-      aux=(2.718281828**objeto.difBlock)-1;
+      aux=(e**objeto.difBlock)-1;
     }
     else if(TIPO=="DifDeform"){
-      aux=(2.718281828**objeto.difDeform)-1;
+      aux=(e**objeto.difDeform)-1;
     }
     else if(TIPO=="DifParid"){
-      aux=objeto.difParid;
+      auxobjeto.difParid.alg/objeto.difParid.parid;
     }
     else if(TIPO=="CantPiezas"){
       aux=objeto.cantPiezas;
@@ -76,13 +79,14 @@ function asignar(objeto,TIPO){
       aux=objeto.cantGiros;
     }
     else if(TIPO=="CantAlg"){
-      aux=objeto.cantAlg;
+      aux=algoritmos.length;
     }
     else if(TIPO=="Nombre"){
       aux=objeto.cubo;
     }
   return aux;
 }
+
 function comparar(A,B,A_D){
   if(A_D=="Asc")
     return B<A;
@@ -126,7 +130,7 @@ function cargarAlgoritmos(data,algoritmos){
   .then(elemento => {
     algoritmos.push(elemento);
     if(algoritmos.length==data.length)
-      ImprimirTabla(data,algoritmos)
+      ordenar(data,algoritmos);
     else
       cargarAlgoritmos(data,algoritmos);
   });
@@ -209,6 +213,7 @@ function dificultadAlgoritmicaTotal(algoritmos){
   }
   return (contador_original+contador_espejo/2);
 }
+
 
 
 
