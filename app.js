@@ -34,7 +34,7 @@ function ordenar(data,algoritmos){
   let TIPO=document.getElementById("Tipo").value;
   let A_D =document.getElementById("Orden").value;
   for(let x=0;x<data.length-1;x++){
-    let aux1=asignar(data[x],TIPO,algoritmos[y]);
+    let aux1=asignar(data[x],TIPO,algoritmos[x]);
     let min=aux1;
     let idmin=x;
     for(let y=x+1;y<data.length;y++){
@@ -213,6 +213,7 @@ function dificultadAlgoritmicaTotal(algoritmos){
   }
   return (contador_original+contador_espejo/2);
 }
+
 
 
 
