@@ -1,3 +1,6 @@
+let e=2.7182;
+let TablaCubos=[];
+let ConjuntoAlgoritmos=[];
 document.addEventListener("DOMContentLoaded", () => {
   actualizar();
 });
@@ -129,6 +132,8 @@ function cargarAlgoritmos(data,algoritmos){
   });
 }
 function ImprimirTabla(data,algoritmos){
+  TablaCubos=data;
+  ConjuntoAlgoritmos=algoritmos;
   let tabla = document.getElementById("tablaCubos");
   for(let x=0;x<data.length;x++){  
     let fila = tabla.insertRow();
@@ -143,13 +148,13 @@ function ImprimirTabla(data,algoritmos){
     fila.insertCell().textContent =prom;
     let algTot=dificultadAlgoritmicaTotal(algoritmos[x])+" gands";
     fila.insertCell().textContent =algTot;
-    let Block=((2.718281828**data[x].difBlock)-1)+" gands";
+    let Block=((e**data[x].difBlock)-1)+" gands";
     fila.insertCell().textContent =Block;
-    let Deform=((2.718281828**data[x].difDeform)-1)+" gands";
+    let Deform=((e**data[x].difDeform)-1)+" gands";
     fila.insertCell().textContent =Deform;
     let Parid=data[x].difParid.alg/data[x].difParid.parid+" gands";
     fila.insertCell().textContent =Parid;
-    let Tot=(dificultadAlgoritmicaTotal(algoritmos[x])+((2.718281828**data[x].difBlock)-1)+((2.718281828**data[x].difDeform)-1)+data[x].difParid.alg/data[x].difParid.parid)+" gands";
+    let Tot=(dificultadAlgoritmicaTotal(algoritmos[x])+((e**data[x].difBlock)-1)+((e**data[x].difDeform)-1)+data[x].difParid.alg/data[x].difParid.parid)+" gands";
     fila.insertCell().textContent =Tot;
 }
 }
@@ -204,6 +209,7 @@ function dificultadAlgoritmicaTotal(algoritmos){
   }
   return (contador_original+contador_espejo/2);
 }
+
 
 
 
