@@ -131,25 +131,20 @@ function cargarAlgoritmos(data,algoritmos){
 function ImprimirTabla(data,algoritmos){
   let tabla = document.getElementById("tablaCubos");
   for(let x=0;x<data.length;x++){  
-  if(data[x].direccion=="algoritmos/3x3.json"){
-    console.log(algoritmos[x].length);
-    console.log(dificultadAlgoritmicaPromedio(algoritmos[x]));
-    console.log(dificultadAlgoritmicaTotal(algoritmos[x]));
-  }
-  let fila = tabla.insertRow();
-  fila.insertCell().textContent =data[x].cubo;
-  fila.insertCell().textContent =data[x].cantPiezas;
-  fila.insertCell().textContent =data[x].tipoPiezas;
-  fila.insertCell().textContent =data[x].cantGiros;
-  fila.insertCell().textContent =data[x].tipoGiros;
-  fila.insertCell().textContent =data[x].pasosMin;
-  fila.insertCell().textContent =data[x].cantAlg;
-  fila.insertCell().textContent =data[x].difPromAlg;
-  fila.insertCell().textContent =data[x].difAlgTot;
-  fila.insertCell().textContent =((2.718281828**data[x].difBlock)-1);
-  fila.insertCell().textContent =((2.718281828**data[x].difDeform)-1);
-  fila.insertCell().textContent =data[x].difParid;
-  fila.insertCell().textContent =data[x].difAlgTot+((2.718281828**data[x].difBlock)-1)+((2.718281828**data[x].difDeform)-1)+data[x].difParid;
+    let fila = tabla.insertRow();
+    fila.insertCell().textContent =data[x].cubo;
+    fila.insertCell().textContent =data[x].cantPiezas;
+    fila.insertCell().textContent =data[x].tipoPiezas;
+    fila.insertCell().textContent =data[x].cantGiros;
+    fila.insertCell().textContent =data[x].tipoGiros;
+    fila.insertCell().textContent =data[x].pasosMin;
+    fila.insertCell().textContent =algoritmos[x].length;
+    fila.insertCell().textContent =dificultadAlgoritmicaPromedio(algoritmos[x]);
+    fila.insertCell().textContent dificultadAlgoritmicaTotal(algoritmos[x]);
+    fila.insertCell().textContent =((2.718281828**data[x].difBlock)-1);
+    fila.insertCell().textContent =((2.718281828**data[x].difDeform)-1);
+    fila.insertCell().textContent =data[x].difParid.alg/data[x].difParid.parid;
+    fila.insertCell().textContent =dificultadAlgoritmicaTotal(algoritmos[x])+((2.718281828**data[x].difBlock)-1)+((2.718281828**data[x].difDeform)-1)+data[x].difParid.alg/data[x].difParid.parid;
 }
 }
 function encontrar(contador,elemento){
@@ -203,6 +198,7 @@ function dificultadAlgoritmicaTotal(algoritmos){
   }
   return (contador_original+contador_espejo/2);
 }
+
 
 
 
