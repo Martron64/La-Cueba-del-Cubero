@@ -128,7 +128,6 @@ function comparar(A,B,A_D){
   else if(A_D=="Des")
     return A<B;
 }
-}
 function ImprimirTabla(data,algoritmos){
   TablaCubos=data;
   ConjuntoAlgoritmos=algoritmos;
@@ -155,8 +154,9 @@ function ImprimirTabla(data,algoritmos){
     let Tot=fmt4((dificultadAlgoritmicaTotal(algoritmos[x])+((e**data[x].difBlock)-1)+((e**data[x].difDeform)-1)+
                   data[x].difParid.alg/data[x].difParid.parid))+" gands";
     fila.insertCell().textContent =Tot;
+  }
 }
-  function fmt4(x) {
+function fmt4(x) {
   return Number(x.toFixed(4));
 }
 function calculoDifAlgoritmica(algoritmo){
@@ -210,3 +210,4 @@ function encontrar(contador,elemento){
   }
   return x;
 }
+
