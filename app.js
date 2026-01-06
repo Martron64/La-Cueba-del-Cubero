@@ -140,7 +140,7 @@ function ImprimirTabla(data,algoritmos){
     fila.insertCell().textContent =data[x].pasosMin;
     fila.insertCell().textContent =algoritmos[x].length;
     fila.insertCell().textContent =dificultadAlgoritmicaPromedio(algoritmos[x]);
-    fila.insertCell().textContent dificultadAlgoritmicaTotal(algoritmos[x]);
+    fila.insertCell().textContent =dificultadAlgoritmicaTotal(algoritmos[x]);
     fila.insertCell().textContent =((2.718281828**data[x].difBlock)-1);
     fila.insertCell().textContent =((2.718281828**data[x].difDeform)-1);
     fila.insertCell().textContent =data[x].difParid.alg/data[x].difParid.parid;
@@ -198,6 +198,7 @@ function dificultadAlgoritmicaTotal(algoritmos){
   }
   return (contador_original+contador_espejo/2);
 }
+
 
 
 
