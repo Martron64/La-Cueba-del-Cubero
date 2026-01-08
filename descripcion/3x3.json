@@ -1,3 +1,4 @@
 [
-  {"tipo":"imagen","contenido":"Imagenes/3x3/3x3_1.png"}
+  {"tipo":"imagen","contenido":"Imagenes/3x3/3x3_1.png"},
+  {"tipo":"texto","contenido":"Esto es de prueba"}
 ]
