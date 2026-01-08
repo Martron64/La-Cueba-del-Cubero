@@ -245,10 +245,31 @@ function mostrarDetalle(i) {
                   cubo.difParid.alg*cubo.difParid.parid))+" gands"}</p>
     <button onclick="cerrarDetalle()">Cerrar</button>
   `;
+  cargarDescripcion(i);
 }
 function cerrarDetalle() {
   document.getElementById("detalleCubo").hidden = true;
   restaurarTabla();
+}
+function cargarDescripcion(cuboId) {
+  fetch(TablaCubos[cuboId].descripcion)
+    .then(r => r.json())
+    .then(elementos => {
+      let cont = document.getElementById("detalleCubo");
+
+      for (let e of elementos) {
+        if (e.tipo === "texto") {
+          let p = document.createElement("p");
+          p.textContent = e.contenido;
+          cont.appendChild(p);
+        } 
+        else if (e.tipo === "imagen") {
+          let img = document.createElement("img");
+          img.src = e.contenido;
+          cont.appendChild(img);
+        }
+      }
+    });
 }
 
 
