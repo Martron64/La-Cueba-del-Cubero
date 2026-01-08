@@ -304,47 +304,41 @@ function cargarDescripcion(cuboId) {
     .then(r => r.json())
     .then(elementos => {
 
+      // ✔️ ESTE es el contenedor correcto
       let cont = document.getElementById("detalleContenido");
+
+      // ✔️ borrar contenido previo ANTES de cargar
       cont.innerHTML = "";
 
-      let i = 0;
-      while (i < elementos.length) {
+      let filaImagenes = null;
 
-        // 🔹 si hay dos imágenes seguidas → fila horizontal
-        if (
-          elementos[i].tipo === "imagen" &&
-          elementos[i + 1] &&
-          elementos[i + 1].tipo === "imagen"
-        ) {
-          let fila = document.createElement("div");
-          fila.className = "fila-imagenes";
+      for (let e of elementos) {
 
-          for (let j = 0; j < 2; j++) {
-            let img = document.createElement("img");
-            img.src = elementos[i + j].contenido;
-            fila.appendChild(img);
+        if (e.tipo === "imagen") {
+
+          // si no existe fila, la creamos
+          if (!filaImagenes) {
+            filaImagenes = document.createElement("div");
+            filaImagenes.className = "fila-imagenes";
+            cont.appendChild(filaImagenes);
           }
 
-          cont.appendChild(fila);
-          i += 2;
-        }
-
-        // 🔹 texto normal
-        else if (elementos[i].tipo === "texto") {
-          let p = document.createElement("p");
-          p.textContent = elementos[i].contenido;
-          cont.appendChild(p);
-          i++;
-        }
-
-        // 🔹 imagen sola
-        else if (elementos[i].tipo === "imagen") {
           let img = document.createElement("img");
-          img.src = elementos[i].contenido;
-          cont.appendChild(img);
-          i++;
+          img.src = e.contenido;
+          filaImagenes.appendChild(img);
+
+        } 
+        else if (e.tipo === "texto") {
+
+          // texto corta la fila de imágenes
+          filaImagenes = null;
+
+          let p = document.createElement("p");
+          p.textContent = e.contenido;
+          cont.appendChild(p);
         }
       }
     });
 }
+
 
