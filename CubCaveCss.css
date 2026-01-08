@@ -13,4 +13,13 @@
 #tablaCubos tr {
   height: 40px;
 }
+.fila-imagenes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.fila-imagenes img {
+  max-width: 45%;
+}
 
