@@ -1,1 +1,16 @@
+#detalleContenido img {
+  max-width: 400px;   /* ajustás a gusto */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+#contenedorTabla {
+  max-height: calc(5 * 40px); /* 5 filas visibles */
+  overflow-y: auto;
+}
+
+#tablaCubos tr {
+  height: 40px;
+}
 
