@@ -305,27 +305,46 @@ function cargarDescripcion(cuboId) {
     .then(elementos => {
 
       let cont = document.getElementById("detalleContenido");
-
-      // 🔴 CLAVE: limpiar antes de cargar
       cont.innerHTML = "";
 
-      for (let e of elementos) {
-        if (e.tipo === "texto") {
+      let i = 0;
+      while (i < elementos.length) {
+
+        // 🔹 si hay dos imágenes seguidas → fila horizontal
+        if (
+          elementos[i].tipo === "imagen" &&
+          elementos[i + 1] &&
+          elementos[i + 1].tipo === "imagen"
+        ) {
+          let fila = document.createElement("div");
+          fila.className = "fila-imagenes";
+
+          for (let j = 0; j < 2; j++) {
+            let img = document.createElement("img");
+            img.src = elementos[i + j].contenido;
+            fila.appendChild(img);
+          }
+
+          cont.appendChild(fila);
+          i += 2;
+        }
+
+        // 🔹 texto normal
+        else if (elementos[i].tipo === "texto") {
           let p = document.createElement("p");
-          p.textContent = e.contenido;
+          p.textContent = elementos[i].contenido;
           cont.appendChild(p);
-        } 
-        else if (e.tipo === "imagen") {
+          i++;
+        }
+
+        // 🔹 imagen sola
+        else if (elementos[i].tipo === "imagen") {
           let img = document.createElement("img");
-          img.src = e.contenido;
-
-          // 🔹 tamaño fijo de imagen (después ajustás)
-          img.style.maxWidth = "400px";
-          img.style.display = "block";
-          img.style.marginBottom = "10px";
-
+          img.src = elementos[i].contenido;
           cont.appendChild(img);
+          i++;
         }
       }
     });
 }
+
