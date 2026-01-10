@@ -1,3 +1,8 @@
+body{
+  background-image: url('fondo.png');
+  padding:0px;
+  margin: 0px;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -41,6 +46,7 @@ rgb(121,84,40) ridge
 .fila-imagenes img {
   max-width: 45%;
 }
+
 
 
 
