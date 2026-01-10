@@ -119,53 +119,55 @@
         dificultad_por_paridad"
       </p>  
     </div>  
-    <h2>
-      tabla de dificultad
-    </h2>
-    <label>
-      Buscar cubo:
-      <input type="text" id="buscador" placeholder="3x3, 4x4, mirror...">
-    </label>
-    <label>
-      Ordenar por:
-      <select id="Tipo">
-        <option value="DifTot">Dificultad total </option>
-        <option value="DifAlg">Dificultad algoritmica </option>
-        <option value="DifBlock">Dificultad por bloqueo </option>
-        <option value="DifDeform">Dificultad por deformacion </option>
-        <option value="DifParid">Dificultad por paridad </option>
-        <option value="CantPiezas">Cantidad de piezas </option>
-        <option value="CantGiros">Cantidad de giros </option>
-        <option value="CantAlg">cantidad de algoritmos </option>
-        <option value="Nombre">Nombre </option>
-      </select>
-    </label>
-    <label>
-      Orden:
-      <select id="Orden">
-        <option value="Des">Descendente</option>
-        <option value="Asc">Ascendente </option>
-      </select>
-    </label>
-    <div id="contenedorTabla">
-      <table id="tablaCubos">
-        <tr>
-          <th>Nombre</th>
-          <th>cantidad de piezas</th>
-          <th>tipos de piezas</th>
-          <th>cantidad de giros</th>
-          <th>tipos de giros</th>
-          <th>pasos minimos</th>
-          <th>cantidad de algoritmos</th>
-          <th>dificultad promedio algoritmica</th>
-          <th>dificultad algoritmica total</th>
-          <th>dificultad por bloqueo</th>
-          <th>dificultad por deformacion</th>
-          <th>dificultad por paridad</th>
-          <th>dificultad total del cubo</th>
-          <th>Ver cubo</th>
-        </tr>
-      </table>
+    <div class='CUBOS'>
+      <h2>
+        tabla de dificultad
+      </h2>
+      <label>
+        Buscar cubo:
+        <input type="text" id="buscador" placeholder="3x3, 4x4, mirror...">
+      </label>
+      <label>
+        Ordenar por:
+        <select id="Tipo">
+          <option value="DifTot">Dificultad total </option>
+          <option value="DifAlg">Dificultad algoritmica </option>
+          <option value="DifBlock">Dificultad por bloqueo </option>
+          <option value="DifDeform">Dificultad por deformacion </option>
+          <option value="DifParid">Dificultad por paridad </option>
+          <option value="CantPiezas">Cantidad de piezas </option>
+          <option value="CantGiros">Cantidad de giros </option>
+          <option value="CantAlg">cantidad de algoritmos </option>
+          <option value="Nombre">Nombre </option>
+        </select>
+      </label>
+      <label>
+        Orden:
+        <select id="Orden">
+          <option value="Des">Descendente</option>
+          <option value="Asc">Ascendente </option>
+        </select>
+      </label>
+      <div id="contenedorTabla">
+        <table id="tablaCubos">
+          <tr>
+            <th>Nombre</th>
+            <th>cantidad de piezas</th>
+            <th>tipos de piezas</th>
+            <th>cantidad de giros</th>
+            <th>tipos de giros</th>
+            <th>pasos minimos</th>
+            <th>cantidad de algoritmos</th>
+            <th>dificultad promedio algoritmica</th>
+            <th>dificultad algoritmica total</th>
+            <th>dificultad por bloqueo</th>
+            <th>dificultad por deformacion</th>
+            <th>dificultad por paridad</th>
+            <th>dificultad total del cubo</th>
+            <th>Ver cubo</th>
+          </tr>
+        </table>
+      </div>
     </div>
     <div id="detalleCubo" hidden>
       <div id="detalleHeader"></div>
@@ -176,4 +178,5 @@
     
   </body>    
 </html>
+
 
