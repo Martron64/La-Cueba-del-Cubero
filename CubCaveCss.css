@@ -11,7 +11,7 @@ body{
 #buscador,
 #Tipo,
 #Orden {
-  font-size: 50px;
+  font-size: 25px;
   padding: 6px 10px;
   background-color: rgb(254, 245, 245);
 }
@@ -98,6 +98,7 @@ rgb(121,84,40) ridge
   display: inline;
   margin: 0;
 }
+
 
 
 
