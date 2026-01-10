@@ -64,11 +64,11 @@ rgb(121,84,40) ridge
 #tablaCubos tr {
   height: 40px;
 }
-#tablaCubos tr:hover{
-  background-color: rgb(75, 75, 75);
-}
 #tablaCubos tr:nth-child(even){
   background-color: rgb(200, 200, 200);
+}
+#tablaCubos tr:hover{
+  background-color: rgb(125, 125, 50);
 }
 .fila-imagenes {
   display: flex;
@@ -79,6 +79,7 @@ rgb(121,84,40) ridge
 .fila-imagenes img {
   max-width: 45%;
 }
+
 
 
 
