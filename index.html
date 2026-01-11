@@ -4,6 +4,12 @@
   <head>
     <title>La Cueva del Cubero</title>
     <link rel="stylesheet" href="CubCaveCss.css">
+    <script>
+      MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
     <div class='FondoInfo'>
@@ -82,7 +88,9 @@
             tan dificil son, en promedio, los algoritmos utilizador. Para el calculo de dificultad de un algoritmo se va a utilizar la 
             formula: 
             <div class="formula">
-              (mov_h + mov_a) · (mov_mayor / mov_menor)
+              $$
+              (mov_h + mov_a)\cdot\frac{mov_{mayor}}{mov_{menor}}
+              $$
             </div>
             Donde mov_h, son la cantidad de caras que se mueven en sentido horario, 
             mov_a la cantidad que se mueve en anti-horario, mov_mayor son la cantidad de veces que se mueve la cara con mas movimiento, 
@@ -167,7 +175,9 @@
             solo esten dadas "vuelta" solo 1 o 3 aristas, o son ninguna, o son 2, o son 4, sin embargo, el 4x4 puede presentar cualquiera
             de los dos casos "impocibles. El calculo de la dificultad es 
             <div class="formula">
-              alg_parid+cant_parid
+              $$
+              dif_{paridad} = alg_{parid} \times cant_{parid}
+              $$
             </div>
             donde alg_parid son los algoritmos que resuelven la paridad, y cant_parid la cantidad de paridades
           </div>
@@ -243,6 +253,7 @@
     
   </body>    
 </html>
+
 
 
 
