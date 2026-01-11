@@ -4,6 +4,14 @@ let TablaCubos=[];
 let ConjuntoAlgoritmos=[];
 let cuboActivo = null;
 let ordenAscendente = false; // false = descendente
+document.querySelectorAll(".toggle").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".contenido").forEach(c => {
+      if (c !== btn.nextElementSibling) c.classList.add("oculto");
+    });
+    btn.nextElementSibling.classList.toggle("oculto");
+  });
+});
 document.addEventListener("DOMContentLoaded", () => {
   actualizar();
 });
@@ -346,6 +354,7 @@ function cargarDescripcion(cuboId) {
       }
     });
 }
+
 
 
 
