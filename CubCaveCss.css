@@ -148,12 +148,12 @@ rgb(121,84,40) ridge
   cursor: pointer;
   text-align: left;
   border-radius: 6px;
+  text-decoration: underline;
+  display:inline;
 }
 
 .toggle:hover {
   cursor:pointer;
-  text-decoration: underline;
-  display:inline;
 }
 
 .contenido {
@@ -162,5 +162,6 @@ rgb(121,84,40) ridge
   border-radius: 6px;
   margin-top: 5px;
 }
+
 
 
