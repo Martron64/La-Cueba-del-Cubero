@@ -82,29 +82,33 @@ function cargarAlgoritmos(data,algoritmos){
       cargarAlgoritmos(data,algoritmos);
   });
 }
-function ordenar(data,algoritmos){
-  let TIPO=document.getElementById("Tipo").value;
-  for(let x=0;x<data.length-1;x++){
-    let aux1=asignar(data[x],TIPO,algoritmos[x]);
-    let min=aux1;
-    let idmin=x;
-    for(let y=x+1;y<data.length;y++){
-       let aux2=asignar(data[y],TIPO,algoritmos[y]);
-       if(comparar(aux2,min)){
-         min=aux2;
-         idmin=y;
-       }
-     }
-     if(comparar(min,aux1)){
-       let aux3=data[x];
-       data[x]=data[idmin];
-       data[idmin]=aux3;
-       let aux4=algoritmos[x];
-       algoritmos[x]=algoritmos[idmin]
-       algoritmos[idmin]=aux4
-     }
+function ordenar(data, algoritmos) {
+  let TIPO = document.getElementById("Tipo").value;
+
+  // 1) Creamos un array de índices
+  let indices = data.map((_, i) => i);
+
+  // 2) Ordenamos los índices usando sort (O n log n)
+  indices.sort((i, j) => {
+    let A = asignar(data[i], TIPO, algoritmos[i]);
+    let B = asignar(data[j], TIPO, algoritmos[j]);
+
+    if (A === B) return 0;
+
+    // reutilizamos tu lógica
+    return comparar(A, B) ? -1 : 1;
+  });
+
+  // 3) Reordenamos data y algoritmos
+  let dataOrdenada = [];
+  let algOrdenados = [];
+
+  for (let i of indices) {
+    dataOrdenada.push(data[i]);
+    algOrdenados.push(algoritmos[i]);
   }
-  ImprimirTabla(data,algoritmos);
+
+  ImprimirTabla(dataOrdenada, algOrdenados);
 }
 function asignar(objeto,TIPO,algoritmos){
   let aux;
@@ -354,6 +358,7 @@ function cargarDescripcion(cuboId) {
       }
     });
 }
+
 
 
 
