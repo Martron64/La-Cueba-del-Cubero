@@ -89,7 +89,7 @@
             formula: 
             <div class="formula">
               $$
-              (mov_h + mov_a)\cdot\frac{mov_{mayor}}{mov_{menor}}
+              dif_{Algoritmica}=(mov_h + mov_a)\cdot\frac{mov_{mayor}}{mov_{menor}}
               $$
             </div>
             Donde mov_h, son la cantidad de caras que se mueven en sentido horario, 
@@ -106,7 +106,9 @@
             otros, por ser espejados (es decir, si el original dice mover la derecha arriba, y arriba a la izquierda, el espejo dice, 
             mover la izquierda arriba, y arriba a la derehca), son mas faciles, con lo que la formula utilizada va a ser:
             <div class="formula">
-              (dif_alg_ori) + (dif_alg_esp)/2
+              $$
+              dif_{Algoritmica Total}=(dif_{alg_ori}) + \frac{dif_{alg_esp}}{2}}
+              $$
             </div>
             Donde dif_alg_org es la suma de las dificultades de los algoritmos originales incluidos los inversos 
             (que es lo mismo a "deshacer" un algoritmo), y dif_alg_esp es la suma de la dificultad de los algoritmos espejos   
@@ -187,7 +189,9 @@
           <div class="contenido oculto">
             Dada por 
             <div class="formula">
-              Dificultad_algoritmica_total + dificultad_por_cloqueo + dificultad_por_deformacion + dificultad_por_paridad
+              $$
+              dif_{Total} =Dificultad_{Algoritmica Total} + dificultad_{bloqueo} + dificultad_{deformacion} + dificultad_{paridad}
+               $$
             </div>
           </div>
         </div>
@@ -253,6 +257,7 @@
     
   </body>    
 </html>
+
 
 
 
