@@ -164,6 +164,10 @@ rgb(121,84,40) ridge
   border-radius: 6px;
   margin-top: 5px;
 }
+.oculto {
+  display: none;
+}
+
 
 
 
