@@ -222,6 +222,7 @@ function calculoDifAlgoritmica(algoritmo){
 }
 
 function dificultadAlgoritmicaPromedio(algoritmos){
+  if (algoritmos.length==0) return 0;
   let contador=0;
   for(let x=0;x<algoritmos.length;x++){
     contador=contador+calculoDifAlgoritmica(algoritmos[x]);
@@ -353,4 +354,5 @@ function cargarDescripcion(cuboId) {
       }
     });
 }
+
 
