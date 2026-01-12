@@ -1,10 +1,10 @@
 [
   {"cubo":"3x3","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
-  "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":1},
+  "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/3x3.json","descripcion":"descripcion/3x3.json"},
   
   {"cubo":"Mirror","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
-   "difBlock":0,"difDeform":1,"difParid":{"alg":0,"parid":1},
+   "difBlock":0,"difDeform":1,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/Mirror.json","descripcion":"descripcion/Mirror.json"},
   
   {"cubo":"4x4","cantPiezas":56,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":9,
