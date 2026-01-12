@@ -175,10 +175,12 @@ rgb(121,84,40) ridge
   font-size: 1.1em;
 }
 .ImagenPrincipal{
+  text-align: center;
   border:none;
   width: 400px;
   height: 300px;
 }
+
 
 
 
