@@ -174,5 +174,9 @@ rgb(121,84,40) ridge
   margin: 15px 0;
   font-size: 1.1em;
 }
+.ImagenPrincipal{
+  border:none;
+  max-width: 100px 100px;
+}
 
 
