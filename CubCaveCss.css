@@ -1,4 +1,4 @@
-body{
+body{ 
   background-image: url('fondo.png');
   padding:0px;
   margin: 0px;
@@ -188,6 +188,7 @@ rgb(121,84,40) ridge
   text-align: center;
   font-size: 50px;
 }
+
 
 
 
