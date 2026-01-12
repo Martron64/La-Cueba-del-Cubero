@@ -48,7 +48,7 @@ rgb(121,84,40) outset
 rgb(121,84,40) ridge
 */
 #contenedorTabla {
-  max-height: calc(5 * 40px); /* 5 filas visibles */
+  max-height: calc(7 * 40px); /* 5 filas visibles */
   overflow-y: auto;
   border: 2px black solid;
 }
@@ -196,3 +196,4 @@ rgb(121,84,40) ridge
   display: inline-block;
   font-size: 13px;
 }
+
