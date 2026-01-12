@@ -8,6 +8,7 @@ body{
   margin: 120px 120px 120px 120px;
   background-color: rgb(254, 245, 245);
   display:block;
+  border:double red 5px;
 }
 #buscador,
 #Tipo,
@@ -183,6 +184,7 @@ rgb(121,84,40) ridge
   margin-left: auto;
   margin-right: auto;
 }
+
 
 
 
