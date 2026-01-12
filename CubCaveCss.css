@@ -1,4 +1,4 @@
-body{ 
+body{
   background-image: url('fondo.png');
   padding:0px;
   margin: 0px;
@@ -22,6 +22,10 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+#detalleHeader{
+  text-align: center;
+  font-size: 25px;
 }
 #detalleContenido img {
   max-width: 400px;   /* ajustás a gusto */
@@ -177,7 +181,7 @@ rgb(121,84,40) ridge
 }
 .ImagenPrincipal{
   text-align: center;
-  border:none;
+  border:solid 1px black;
   width: 475px;
   height: 300px;
   object-fit: cover;
@@ -188,22 +192,7 @@ rgb(121,84,40) ridge
   text-align: center;
   font-size: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ExplicacionFormulas{
+  display: inline-block;
+  font-size: 13px;
+}
