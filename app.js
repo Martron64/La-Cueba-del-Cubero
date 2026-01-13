@@ -2,7 +2,7 @@ let FILAS_VISIBLES = 5;
 let e=2.718281828459;
 let TablaCubos=[];
 let ConjuntoAlgoritmos=[];
-let cuboActivo = null;
+let cuboActivo = null; 
 let ordenAscendente = false; // false = descendente
 document.querySelectorAll(".toggle").forEach(btn => {
   btn.addEventListener("click", () => {
@@ -354,6 +354,7 @@ function cargarDescripcion(cuboId) {
       }
     });
 }
+
 
 
 
