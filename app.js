@@ -290,7 +290,7 @@ function mostrarDetalle(i) {
         dificultadAlgoritmicaTotal(algs)
         + ((e ** (cubo.difBlock * 2)) - 1)
         + ((e ** (cubo.difDeform * 2)) - 1)
-        + cubo.difParid.alg * cubo.difParid.parid
+        + cubo.difParid.alg + cubo.difParid.parid
       )
     } gands</p>
   `;
@@ -354,5 +354,6 @@ function cargarDescripcion(cuboId) {
       }
     });
 }
+
 
 
