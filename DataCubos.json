@@ -17,7 +17,7 @@
   
   {"cubo":"coin_pyramix","cantPiezas":20,"tipoPiezas":2,"cantGiros":8,"tipoGiros":1,"pasosMin":3,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
-   "direccion":"algoritmos/coin_pyramix.json","descripcion":"descripcion/coin_pyramix.json"}
+   "direccion":"algoritmos/coin_pyramix.json","descripcion":"descripcion/coin_pyramix.json"},
   
   {"cubo":"axis","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
    "difBlock":0,"difDeform":2,"difParid":{"alg":2,"parid":2},
