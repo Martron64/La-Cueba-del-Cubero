@@ -100,7 +100,7 @@
    "direccion":"algoritmos/rainbow_ball.json","descripcion":"descripcion/rainbow_ball.json"},
   
    {"cubo":"Redi Barrel","cantPiezas":10,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":2,
-   "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
+   "difBlock":0,"difDeform":1,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/redi_barrel.json","descripcion":"descripcion/redi_barrel.json"},
   
    {"cubo":"Skewb","cantPiezas":12,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":3,
