@@ -23,7 +23,7 @@
       </h2>
       <h3>
         La dificultad de un cubo de rubik no es medible con un simple "este me costo mas que este", contando la 
-        cantidad de piezas o giros, o de una forma lineal, varia dependiendo ciertos parametros, independientes 
+        cantidad de piezas o giros, o de una forma lineal, varía dependiendo ciertos parámetros, independientes 
         unos de otros.
       </h3>
       <h3>
@@ -33,26 +33,26 @@
         <div class="fila-info">
           <button class="toggle">Nombre:</button>
           <div class="contenido oculto">
-            Simplemente el nombre del cubo, aunque algunos tendran una un agregado como lo puede ser "(fd_red)", o 
-            "(fd_com)", que significan Fridich reducido y Fridich completo. Esto signofoca que la dificultad a 
-            mostrar no es la del cubo en si, sino la de un metodo de resolucion mas dificil que busca resolverlo 
-            mas rapido y en menos pasos. De no tener ningun añadido, es el metodo principiante  
+            Simplemente el nombre del cubo, aunque algunos tendran un agregado como lo puede ser "(fd_red)", o 
+            "(fd_com)", que significan Fridich reducido y Fridich completo. Esto significa que la dificultad a 
+            mostrar no es la del cubo en si, sino la de un método de resolución mas difícil que busca resolverlo 
+            mas rápido y en menos pasos. De no tener ningun añadido, es el método "principiante".  
           </div>
         </div>
         <div class="fila-info">
           <button class="toggle">Cantidad de piezas:</button>
           <div class="contenido oculto">
-            La cantidad de piezas del cubo de rubik  
+            La cantidad de piezas del cubo de rubik.  
           </div>
         </div>
         <div class="fila-info">
           <button class="toggle">Tipo de piezas:</button>
           <div class="contenido oculto">
             Para las personas que piensen que, en el cubo de rubik clasico, cada cuadrado de color es una pieza 
-            unica, que puede ser cambiada por cualquier otra, este apartado puede no tener sentido, pero, por 
+            unica, que puede ser cambiada por cualquier otra, este apartado puede no tener sentido para ellos pero; por 
             ejemplo, el cubo de rubik 3x3, no presenta 54 piezas distintas (9 piezas por 6 caras), sino que 
             presenta 26, porque son 6 centros (piezas de un color), 12 aristas (piezas de 12 colores) y 8 esquinas 
-            (piezas de 3 colores). Con lo que este apartado sirve para saber justamente eso, en cuantos conjuntos 
+            (piezas de 3 colores). Con lo que este apartado sirve para saber justamente eso; en cuantos conjuntos 
             se dividen las piezas
           </div>
         </div>
@@ -65,7 +65,7 @@
         <div class="fila-info">
           <button class="toggle">Tipos de Giros:</button>
           <div class="contenido oculto">
-            Para una persona que nunca haya visto una variacion, esto se debe, a que existen cubos con mas de un 
+            Para una persona que nunca haya visto una variación o modificación, existen cubos con mas de un 
             tipo de giro. El 3x3 tiene solo 1, pero cubos como el square-one presentan 2 (2 de tipo centro y 2 de 
             tipo de movimiento de cara)  
           </div>
@@ -73,19 +73,16 @@
         <div class="fila-info">
           <button class="toggle">Pasos minimos:</button>
           <div class="contenido oculto">
-            Esto depende del metodo utilizado, y determina la cantidad de pasos minimos que presenta parapoder 
-            armar un cubo de rubik (el metodo principiante del 3x3 presenta 7, mientras que el Fridich reducido 
+            Esto depende del metodo utilizado, y determina la cantidad de pasos minimos que presenta para poder 
+            armar un cubo de rubik (el método principiante del 3x3 presenta 7, mientras que el Fridich reducido 
             presenta 4)
           </div>
         </div>
         <div class="fila-info">
           <button class="toggle">Cantidad de Algoritmos:</button>
           <div class="contenido oculto">
-            Los algoritmos son la base de resolucios de todos (o de al menos mas del %95) los cubos de rubik. 
-            Son una serie concreta de movimientos que genera un cambio conocido en ciertas piezas, dejando intacta 
-            otras que generalmente son las que queremos evitar (el tipico caso de armo una cara, y cuando quiero 
-            armar otra desarmo lo que ya hice). Este apartado muestra el minimo de algoritmos nescesarios para 
-            poder armar el cubo con cierto metodo  
+            Los algoritmos son la base de resolución de todos los cubos de rubik. Este apartado muestra el minimo de 
+            algoritmos nescesarios para poder armar el cubo con cierto metodo  
           </div>
         </div>
         <div class="fila-info">
@@ -105,12 +102,10 @@
             <span class="ExplicacionFormulas">$$mov_{a}$$</span> 
             " la cantidad que se mueve en anti-horario, " 
             <span class="ExplicacionFormulas">$$mov_{mayor}$$</span> 
-            " son la cantidad de veces que se mueve la cara con mas movimiento, y "
+            " son la cantidad de veces que se mueve la cara con mayor movimiento, y "
             <span class="ExplicacionFormulas">$$mov_{menor}$$</span>
-            ", la cantidad de veces que se mueve la cara con menor movimiento (estos 
-            ultimos dos, no es indepentiende de si la cara se mueve en un sentido o en otro, sino que si se mueve 
-            mas veces en un sentido, y menos en otro, la cantidad en un sentido puede ser usara como el mayor, y el 
-            otro como el menor)
+            ", la cantidad de veces que se mueve la cara con menor movimiento (no se considera la suma de los dos sentidos sobre una
+            misma cara, sino que se toman como dos caras completamente distintas)
           </div>
         </div>
         <div class="fila-info">
@@ -127,11 +122,10 @@
             </div>
             Donde "
             <span class="ExplicacionFormulas">$$dif_{alg original}$$</span>
-            " es la suma de las dificultades de los algoritmos originales incluidos los inversos (que es lo 
+            " es la suma de las dificultades de los algoritmos originales incluidos sus inversos (que es lo 
             mismo a "deshacer" un algoritmo), y "
             <span class="ExplicacionFormulas">$$dif_{alg esp}$$</span> 
-            " es la suma de la dificultad de los 
-            algoritmos espejos   
+            " es la suma de la dificultad de los algoritmos espejo   
           </div>
         </div>
         <div class="fila-info">
@@ -143,7 +137,7 @@
                 nivel 0: no bloqueo
               </li>
               <li>
-                nivel 1: hay que "alinear" el cubo para girar (ej: pentacle, square-one, polaris)
+                nivel 1: hay que "alinear" el cubo para girar (ej: pentacle, polaris)
               </li>
               <li>
                 nivel 2: Alguna piezas se bloquean en ciertos casos (ej:Puppet V2)
@@ -160,10 +154,7 @@
             </div>
             Con "
             <span class="ExplicacionFormulas">$$n$$</span> 
-            " siendo el nivel. La dificultad por bloqueo, dependera o afectara de manera directa o 
-            indirectamente de la cantidad y dificultad algoritmica, y esta relacion dependera netamente del tipo de 
-            cubo de rubik.
-          </div>
+            " siendo el nivel.
         </div>
         <div class="fila-info">
           <button class="toggle">Dificultad por Deformacion:</button>
@@ -199,16 +190,14 @@
             </div>
             Con "
             <span class="ExplicacionFormulas">$$n$$</span> 
-            " siendo el nivel. La dificultad por deformacion, al afectar simplemente la estetica
-            de las piezas, va a sentirse en mayor o menor medida dependiendo de la cantidad de piezas del cubo de 
-            rubik.  
+            " siendo el nivel.
           </div>
         </div>
         <div class="fila-info">
           <button class="toggle">Dificultad por Paridad:</button>
           <div class="contenido oculto">
-            Es pociblemente el apartado que menos dificultad otorga al cubo de rubik, y ocurre cuando es una 
-            variacion de otro cubo, como el 4x4 variacion del 3x3, por ejemplo, al llegar a la etapa de la cruz 
+            Es posiblemente el apartado que menos dificultad otorga al cubo de rubik, y ocurre cuando es una 
+            variación de otro cubo, Como el 4x4 variacion del 3x3. Un ejemplo, es que al llegar a la etapa de la cruz 
             amarilla, en el 3x3 es imposible que solo esten dadas "vuelta" solo 1 o 3 aristas, o son ninguna, o 
             son 2, o son 4, sin embargo, el 4x4 puede presentar cualquiera de los dos casos "imposibles. El calculo 
             de la dificultad es: 
@@ -248,22 +237,72 @@
             limitado y controlado de piezas, movimientos que pueden variar entre intercambiar de lugar 2 o mas piezas
             o rotar sobre si mismas 1 o mas piezas, o incluso ambos movimientos. Los movimientos del algoritmo estan
             denominados por letras, que segun la notacion, determinan que cara mover, y en que sentido. Por ejemplo
-            "<span class="ExplicacionFormulas">$$R , U , R' , U , R , 2U , R'$$</span>" , un algoritmo usado en el motodo fridich reducido del 3x3 para hacer la ultima cara
+            "<span class="ExplicacionFormulas">$$R , U , R' , U , R , 2U , R'$$</span>" , un algoritmo usado en el motodo fridich 
+            reducido del 3x3 para hacer la ultima cara.
           </div>
         </div>
         <div class="fila-info">
           <button class="toggle">Que es la notacion?</button>
           <div class="contenido oculto">
-            La notacion nos aclara por cada cubo, que cara y en que direccion gira, esto ultimo definiendolo con una comilla
-            arriba ( ' ), que significa que se mueve al revez. Generalmente las letras se asignan por su traduccion del ingles. 
-            Por ejemplo, es en el 3x3 clasico, donde la letra <span class="ExplicacionFormulas">$$U$$</span> (up) nos dice que debemos mover la cara de arriba en sentido 
-            horario la <span class="ExplicacionFormulas">$$U'$$</span> (se lee "U prima") nos dice que el movimiento debe ser en sentido antihorario, la letra <span class="ExplicacionFormulas">$$R$$</span> (right) es 
-            de derecha, <span class="ExplicacionFormulas">$$L$$</span> (left) es la izquierda, <span class="ExplicacionFormulas">$$F$$</span> (front) es la cara de en frente, <span class="ExplicacionFormulas">$$B$$</span> (back) la cara de atras y <span class="ExplicacionFormulas">$$D$$</span> (down) la cara 
-            de abajo, las letras <span class="ExplicacionFormulas">$$M$$</span>, <span class="ExplicacionFormulas">$$E$$</span>, y <span class="ExplicacionFormulas">$$S$$</span>, estan reservadas para el movimiento de las caras del medio, y por ultimo <span class="ExplicacionFormulas">$$X$$</span>, <span class="ExplicacionFormulas">$$Y$$</span> y <span class="ExplicacionFormulas">$$Z$$</span> es 
-            mover el cubo completo. Pero esta notacion es del 3x3, otros cubos pueden tener la misma u otra completamente diferente,
-            como en el FTO, donde se agregan los movimientos <span class="ExplicacionFormulas">$$BR$$</span> (back right) y <span class="ExplicacionFormulas">$$BL$$</span> (back left), ademas de que se reemplaza <span class="ExplicacionFormulas">$$M$$</span>, <span class="ExplicacionFormulas">$$E$$</span>, y 
-            <span class="ExplicacionFormulas">$$S$$</span> por <span class="ExplicacionFormulas">$$w$$</span> y <span class="ExplicacionFormulas">$$s$$</span>, pero tienen que estar acompañado de al menos otra letra, generalmente <span class="ExplicacionFormulas">$$R$$</span>, <span class="ExplicacionFormulas">$$L$$</span>, <span class="ExplicacionFormulas">$$F$$</span> o <span class="ExplicacionFormulas">$$U$$</span>, para la <span class="ExplicacionFormulas">$$s$$</span>, ya que, <span class="ExplicacionFormulas">$$Rs$$</span> 
-            es lo mismo que <span class="ExplicacionFormulas">$$Bls'$$</span>, y con cualquiera de las 8 para la <span class="ExplicacionFormulas">$$w$$</span> 
+            La notacion nos aclara por cada cubo, que cara, y en que direccion gira, esto ultimo definiendolo con una apostrofe ( ' ), 
+            que significa que se mueve al revez. Generalmente las letras se asignan por su traduccion del ingles. Por ejemplo, es en el 
+            3x3 clasico, donde la letra 
+            <span class="ExplicacionFormulas">$$U$$</span>
+            (up) nos dice que debemos mover la cara de arriba en sentido horario la 
+            <span class="ExplicacionFormulas">$$U'$$</span>
+            (se lee "U prima") nos dice que el movimiento debe ser en sentido antihorario, la letra 
+            <span class="ExplicacionFormulas">$$R$$</span>
+            (right) es de derecha, 
+            <span class="ExplicacionFormulas">$$L$$</span>
+            (left) es la izquierda, 
+            <span class="ExplicacionFormulas">$$F$$</span>
+            (front) es la cara de en frente, 
+            <span class="ExplicacionFormulas">$$B$$</span>
+            (back) la cara de atras y 
+            <span class="ExplicacionFormulas">$$D$$</span>
+            (down) la cara de abajo, las letras 
+            <span class="ExplicacionFormulas">$$M$$</span>
+            , 
+            <span class="ExplicacionFormulas">$$E$$</span>
+            , y 
+            <span class="ExplicacionFormulas">$$S$$</span>
+            , estan reservadas para el movimiento de las caras del medio, y por ultimo 
+            <span class="ExplicacionFormulas">$$X$$</span>
+            , 
+            <span class="ExplicacionFormulas">$$Y$$</span>
+            y 
+            <span class="ExplicacionFormulas">$$Z$$</span>
+            es mover el cubo completo. Pero esta notacion es del 3x3, otros cubos pueden tener la misma u otra completamente diferente
+            como en el FTO, donde se agregan los movimientos 
+            <span class="ExplicacionFormulas">$$BR$$</span>
+            (back right) y 
+            <span class="ExplicacionFormulas">$$BL$$</span>
+            (back left), ademas de que se reemplaza 
+            <span class="ExplicacionFormulas">$$M$$</span>
+            , 
+            <span class="ExplicacionFormulas">$$E$$</span>
+            , y 
+            <span class="ExplicacionFormulas">$$S$$</span>
+            por 
+            <span class="ExplicacionFormulas">$$w$$</span>
+            y 
+            <span class="ExplicacionFormulas">$$s$$</span>
+            , pero tienen que estar acompañado de al menos otra letra, generalmente 
+            <span class="ExplicacionFormulas">$$R$$</span>
+            , 
+            <span class="ExplicacionFormulas">$$L$$</span>
+            , 
+            <span class="ExplicacionFormulas">$$F$$</span>
+            o 
+            <span class="ExplicacionFormulas">$$U$$</span>
+            , para la 
+            <span class="ExplicacionFormulas">$$s$$</span>
+            , ya que, 
+            <span class="ExplicacionFormulas">$$Rs$$</span>
+            es lo mismo que 
+            <span class="ExplicacionFormulas">$$Bls'$$</span>
+            , y con cualquiera de las 8 para la 
+            <span class="ExplicacionFormulas">$$w$$</span> 
           </div>
         </div>
       </div>
@@ -347,8 +386,8 @@
               Para el calculo de la dificultad por bloqueo: El crecimiento de esto es muy exponencial, por 
               eso una formula con "e" elevado a algo. Lo de los niveles es para tener una forma de clasificar
               , el "2" es para que escale mejor respecto al resto del metodo, y el "- 1" es para que cuando 
-              sea n=0, la ecuacion de 0 en vez de 1. Y puede afectar de manera directa a los algoritmos (crear 
-              nuevos), o de manera indirecta (tener que cambiarlos en la marcha).
+              sea n=0, la ecuacion de 0 en vez de 1. Y puede afectar de manera directa a los algoritmos (tener que cambiarlos 
+            en la marcha), o de manera indirecta (crear nuevos).
           </li>
           <li>
               Para el calculo de la dificultad por deformacion: Exactamente el mismo razonamiento que el 
@@ -375,5 +414,6 @@
     
   </body>    
 </html>
+
 
 
