@@ -11,19 +11,19 @@
    "difBlock":0,"difDeform":0,"difParid":{"alg":2,"parid":2},
    "direccion":"algoritmos/4x4.json","descripcion":"descripcion/4x4.json"},
   
-  {"cubo":"mastermorphix","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
+  {"cubo":"Mastermorphix","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
    "difBlock":0,"difDeform":2,"difParid":{"alg":2,"parid":3},
    "direccion":"algoritmos/mastermorphix.json","descripcion":"descripcion/mastermorphix.json"},
   
-  {"cubo":"coin_pyramix","cantPiezas":20,"tipoPiezas":2,"cantGiros":8,"tipoGiros":1,"pasosMin":3,
+  {"cubo":"Coin Pyramix","cantPiezas":20,"tipoPiezas":2,"cantGiros":8,"tipoGiros":1,"pasosMin":3,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/coin_pyramix.json","descripcion":"descripcion/coin_pyramix.json"},
    
-  {"cubo":"axis","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
+  {"cubo":"Axis","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
    "difBlock":0,"difDeform":2,"difParid":{"alg":2,"parid":2},
    "direccion":"algoritmos/axis.json","descripcion":"descripcion/axis.json"},
   
-   {"cubo":"gear 3x3","cantPiezas":38,"tipoPiezas":4,"cantGiros":6,"tipoGiros":1,"pasosMin":5,
+   {"cubo":"Gear 3x3","cantPiezas":38,"tipoPiezas":4,"cantGiros":6,"tipoGiros":1,"pasosMin":5,
    "difBlock":0,"difDeform":1,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/gear_3x3.json","descripcion":"descripcion/gear_3x3.json"},
   
@@ -51,87 +51,83 @@
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/5x5.json","descripcion":"descripcion/5x5.json"},
   
-   {"cubo":"dino","cantPiezas":12,"tipoPiezas":1,"cantGiros":8,"tipoGiros":1,"pasosMin":3,
+   {"cubo":"Dino","cantPiezas":12,"tipoPiezas":1,"cantGiros":8,"tipoGiros":1,"pasosMin":3,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/dino.json","descripcion":"descripcion/dino.json"},
   
-   {"cubo":"evil eye","cantPiezas":54,"tipoPiezas":3,"cantGiros":12,"tipoGiros":2,"pasosMin":3,
+   {"cubo":"Evil eye","cantPiezas":54,"tipoPiezas":3,"cantGiros":12,"tipoGiros":2,"pasosMin":3,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/evil_eye.json","descripcion":"descripcion/evil_eye.json"},
   
-   {"cubo":"fisher","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
+   {"cubo":"Fisher","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
    "difBlock":0,"difDeform":1,"difParid":{"alg":2,"parid":2},
    "direccion":"algoritmos/fisher.json","descripcion":"descripcion/fisher.json"},
   
-   {"cubo":"ivy skewb","cantPiezas":62,"tipoPiezas":4,"cantGiros":7,"tipoGiros":2,"pasosMin":5,
+   {"cubo":"Ivy Skewb","cantPiezas":62,"tipoPiezas":4,"cantGiros":7,"tipoGiros":2,"pasosMin":5,
    "difBlock":1,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/ivy_skewb.json","descripcion":"descripcion/ivy_skewb.json"},
   
-   {"cubo":"ivy","cantPiezas":10,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":2,
+   {"cubo":"Ivy","cantPiezas":10,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":2,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/ivy.json","descripcion":"descripcion/ivy.json"},
   
-   {"cubo":"jinx pyramix","cantPiezas":14,"tipoPiezas":3,"cantGiros":4,"tipoGiros":1,"pasosMin":4,
+   {"cubo":"Jinx Pyramix","cantPiezas":14,"tipoPiezas":3,"cantGiros":4,"tipoGiros":1,"pasosMin":4,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/jinx_pyramix.json","descripcion":"descripcion/jinx_pyramix.json"},
   
-   {"cubo":"megamix","cantPiezas":62,"tipoPiezas":3,"cantGiros":12,"tipoGiros":1,"pasosMin":7,
+   {"cubo":"Megamix","cantPiezas":62,"tipoPiezas":3,"cantGiros":12,"tipoGiros":1,"pasosMin":7,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/megamix.json","descripcion":"descripcion/megamix.json"},
   
-   {"cubo":"mirror 2x2 simetrico","cantPiezas":8,"tipoPiezas":1,"cantGiros":6,"tipoGiros":1,"pasosMin":3,
+   {"cubo":"Mirror 2x2 simetrico","cantPiezas":8,"tipoPiezas":1,"cantGiros":6,"tipoGiros":1,"pasosMin":3,
    "difBlock":0,"difDeform":1,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/mirror_2x2_simetrico.json","descripcion":"descripcion/mirror_2x2_simetrico.json"},
   
-   {"cubo":"pentacle","cantPiezas":74,"tipoPiezas":4,"cantGiros":12,"tipoGiros":2,"pasosMin":6,
+   {"cubo":"Pentacle","cantPiezas":74,"tipoPiezas":4,"cantGiros":12,"tipoGiros":2,"pasosMin":6,
    "difBlock":1,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/pentacle.json","descripcion":"descripcion/pentacle.json"},
   
-   {"cubo":"polaris","cantPiezas":38,"tipoPiezas":3,"cantGiros":12,"tipoGiros":2,"pasosMin":3,
+   {"cubo":"Polaris","cantPiezas":38,"tipoPiezas":3,"cantGiros":12,"tipoGiros":2,"pasosMin":3,
    "difBlock":1,"difDeform":1,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/polaris.json","descripcion":"descripcion/polaris.json"},
   
-   {"cubo":"pyramix","cantPiezas":14,"tipoPiezas":3,"cantGiros":4,"tipoGiros":1,"pasosMin":3,
+   {"cubo":"Pyramix","cantPiezas":14,"tipoPiezas":3,"cantGiros":4,"tipoGiros":1,"pasosMin":3,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/pyramix.json","descripcion":"descripcion/pyramix.json"},
   
-   {"cubo":"rainbow ball","cantPiezas":11,"tipoPiezas":1,"cantGiros":0,"tipoGiros":1,"pasosMin":1,
+   {"cubo":"Rainbow Ball","cantPiezas":11,"tipoPiezas":1,"cantGiros":0,"tipoGiros":1,"pasosMin":1,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/rainbow_ball.json","descripcion":"descripcion/rainbow_ball.json"},
   
-   {"cubo":"redi barrel","cantPiezas":10,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":2,
+   {"cubo":"Redi Barrel","cantPiezas":10,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":2,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/redi_barrel.json","descripcion":"descripcion/redi_barrel.json"},
   
-   {"cubo":"skewb","cantPiezas":12,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":3,
+   {"cubo":"Skewb","cantPiezas":12,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":3,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/skewb.json","descripcion":"descripcion/skewb.json"},
   
-   {"cubo":"square one","cantPiezas":18,"tipoPiezas":3,"cantGiros":4,"tipoGiros":2,"pasosMin":4,
+   {"cubo":"Square One","cantPiezas":18,"tipoPiezas":3,"cantGiros":4,"tipoGiros":2,"pasosMin":4,
    "difBlock":2,"difDeform":1,"difParid":{"alg":0,"parid":1},
    "direccion":"algoritmos/square_one.json","descripcion":"descripcion/square_one.json"},
   
-   {"cubo":"star barrel","cantPiezas":27,"tipoPiezas":4,"cantGiros":7,"tipoGiros":2,"pasosMin":3,
+   {"cubo":"Star Barrel","cantPiezas":27,"tipoPiezas":4,"cantGiros":7,"tipoGiros":2,"pasosMin":3,
    "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/star_barrel.json","descripcion":"descripcion/star_barrel.json"},
   
-   {"cubo":"twisted skewb","cantPiezas":14,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":3,
+   {"cubo":"Twisted Skewb","cantPiezas":14,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":3,
    "difBlock":0,"difDeform":1,"difParid":{"alg":1,"parid":1},
    "direccion":"algoritmos/twisted_skewb.json","descripcion":"descripcion/twisted_skewb.json"},
   
-   {"cubo":"ivy","cantPiezas":10,"tipoPiezas":2,"cantGiros":4,"tipoGiros":1,"pasosMin":2,
-   "difBlock":0,"difDeform":0,"difParid":{"alg":0,"parid":0},
-   "direccion":"algoritmos/ivy.json","descripcion":"descripcion/ivy.json"},
-  
-   {"cubo":"windmill","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
+   {"cubo":"Windmill","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":7,
    "difBlock":0,"difDeform":1,"difParid":{"alg":1,"parid":1},
    "direccion":"algoritmos/windmill.json","descripcion":"descripcion/windmill.json"},
   
-   {"cubo":"puppet V1","cantPiezas":20,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":4,
+   {"cubo":"Puppet V1","cantPiezas":20,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":4,
    "difBlock":3,"difDeform":1,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/puppet_V1.json","descripcion":"descripcion/puppet_V1.json"},
   
-   {"cubo":"puppet V2","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":4,
+   {"cubo":"Puppet V2","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":4,
    "difBlock":2,"difDeform":1,"difParid":{"alg":0,"parid":0},
    "direccion":"algoritmos/puppet_V2.json","descripcion":"descripcion/puppet_V2.json"}
 ]
