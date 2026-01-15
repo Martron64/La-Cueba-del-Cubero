@@ -129,10 +129,10 @@
   
    {"cubo":"puppet V1","cantPiezas":20,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":4,
    "difBlock":3,"difDeform":1,"difParid":{"alg":0,"parid":0},
-   "direccion":"algoritmos/puppEt_V1.json","descripcion":"descripcion/puppEt_V1.json"},
+   "direccion":"algoritmos/puppet_V1.json","descripcion":"descripcion/puppet_V1.json"},
   
    {"cubo":"puppet V2","cantPiezas":26,"tipoPiezas":3,"cantGiros":6,"tipoGiros":1,"pasosMin":4,
    "difBlock":2,"difDeform":1,"difParid":{"alg":0,"parid":0},
-   "direccion":"algoritmos/puppEt_V2.json","descripcion":"descripcion/puppEt_V2.json"}
+   "direccion":"algoritmos/puppet_V2.json","descripcion":"descripcion/puppet_V2.json"}
 ]
 
