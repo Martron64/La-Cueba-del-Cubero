@@ -391,9 +391,10 @@ function cargarDescripcion(cuboId) {
       contenedor.appendChild(ul);
       }
     }
-  }
+  
  });
 }
+
 
 
 
