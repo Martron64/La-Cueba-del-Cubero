@@ -114,10 +114,9 @@
             ", son la suma de todos los tipos de giro de un algoritmo, distinguiendo un sentido de otro y si el movimiento se aplica
             mas de una vez (U≠U'≠2U≠U), " 
             <span class="ExplicacionFormulas">$$mov_{mayor}$$</span> 
-            " son la cantidad de veces que se mueve la cara con mayor movimiento, y "
+            " es la cantidad de veces que se repite el movimiento mas usado, y "
             <span class="ExplicacionFormulas">$$mov_{menor}$$</span>
-            ", la cantidad de veces que se mueve la cara con menor movimiento (no se considera la suma de los dos sentidos sobre una
-            misma cara, sino que se toman como dos caras completamente distintas)
+            ", es la cantidad de veces que se repite el movimiento menos usado
           </div>
         </div>
         <div class="fila-info">
@@ -414,9 +413,9 @@
       <ul>
           <li>
               Para el calculo de la dificultad de un algoritmo: la suma de los tipos de movimientos a agregan dificultad
-              , y la fraccion, es porque, que un algoritmo sea largo no nescesariamente lo hace mas dificil, sino el echo 
-              de que no "siga algun patron simple", y eso es mas facil de medir al comparar los movimientos de la capa que 
-              mas se mueve, contra la que menos, ya que si esta diferencia es grande, es porque pueden ser movimientos que 
+              , y la fracción, es porque, que un algoritmo sea largo no nescesariamente lo hace mas dificil, sino el echo 
+              de que no "siga algun patron simple", y eso es mas facil de medir al comparar los movimientos de la capa (o tipo de giro)
+              que mas se mueve, contra la que menos, ya que si esta diferencia es grande, es porque pueden ser movimientos que 
               no sean "repetidos" (como lo puede ser "(R' D' R D)x5").
           </li>
           <li>
@@ -457,6 +456,7 @@
     
   </body>    
 </html>
+
 
 
 
