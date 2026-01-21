@@ -4,6 +4,7 @@ let TablaCubos=[];
 let ConjuntoAlgoritmos=[];
 let cuboActivo = null; 
 let ordenAscendente = false; // false = descendente
+let precision = 2;
 document.querySelectorAll(".toggle").forEach(btn => {
   btn.addEventListener("click", () => {
     document.querySelectorAll(".contenido").forEach(c => {
@@ -195,7 +196,7 @@ if (data.length <= FILAS_VISIBLES) {
 }
 }
 function setprecition(x) {
-  return Number(x.toFixed(2));
+  return Number(x.toFixed(precision));
 }
 
 function calculoDifAlgoritmica(algoritmo){
@@ -392,6 +393,7 @@ function cargarDescripcion(cuboId) {
     }
  });
 }
+
 
 
 
