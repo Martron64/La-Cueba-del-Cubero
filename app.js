@@ -73,6 +73,7 @@ function subcadena(Str,SubStr){
   return false;
 }
 function cargarAlgoritmos(data,algoritmos){
+  console.log("cargando ",data[algoritmos.length].direccion);
   fetch(data[algoritmos.length].direccion)
   .then(response => response.json())
   .then(elemento => {
@@ -393,6 +394,7 @@ function cargarDescripcion(cuboId) {
     }
  });
 }
+
 
 
 
